@@ -21,15 +21,18 @@
     </div>
   </header>
 
-  <!-- Banner Image -->
-  <section class="w-full">
+  <!-- Banner Image with Overlapping Headshot -->
+  <section class="relative w-full">
     <img src="banner.jpg" alt="Banner Image" class="w-full h-64 object-cover shadow-md">
+    <div class="absolute inset-0 flex justify-center items-end pb-[-3rem]">
+      <!-- This space is intentionally blank to reserve room for headshot overlap -->
+    </div>
   </section>
 
   <main class="max-w-6xl mx-auto p-6">
     <!-- Hero -->
-    <section class="text-center py-12">
-      <img src="headshot.jpg" alt="Sudhendu Pandey Headshot" class="w-40 h-40 rounded-full mx-auto mb-4 border border-gray-300 shadow">
+    <section class="text-center py-12 relative -mt-20 z-10">
+      <img src="headshot.jpg" alt="Sudhendu Pandey Headshot" class="w-40 h-40 rounded-full mx-auto mb-4 border-4 border-white shadow-lg">
       <h2 class="text-4xl font-bold mb-2">Technology Leader | Data Superhero | Docker Captain</h2>
       <p class="text-lg text-gray-600">Director of Sales Engineering @ kipi.ai, building modern data stack solutions for enterprise clients.</p>
       <div class="mt-4 space-x-4">
